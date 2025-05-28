@@ -1,0 +1,6 @@
+{signal: [
+  {name: 'clk', wave: 'n........................', period: 1},
+  {name: 'clk_div', wave: 'n....', period: 5},
+  {name: "h_counter",  wave: "=====",data:["0","1","2","3","4","5"], period:5},
+  {name: "v_counter"},
+]}
