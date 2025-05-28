@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 28 15:06:47 2025
+# Process ID: 8320
+# Current directory: C:/harman/fpga-VGA/VGA_RGB_Switch
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent49488 C:\harman\fpga-VGA\VGA_RGB_Switch\VGA_RGB_Switch.xpr
+# Log file: C:/harman/fpga-VGA/VGA_RGB_Switch/vivado.log
+# Journal file: C:/harman/fpga-VGA/VGA_RGB_Switch\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_sw_vga.tcl
+run all
+run all
+relaunch_sim
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
