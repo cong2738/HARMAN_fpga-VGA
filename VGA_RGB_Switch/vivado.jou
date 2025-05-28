@@ -48,3 +48,11 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.runs/impl_1/VGA_Controler.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close [ open C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.srcs/sources_1/new/VGA_SMPTE_color.sv w ]
+add_files C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.srcs/sources_1/new/VGA_SMPTE_color.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.srcs/sources_1/new/VGA_RGB_Switch.sv] -no_script -reset -force -quiet
+remove_files  C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.srcs/sources_1/new/VGA_RGB_Switch.sv
+file delete -force C:/harman/fpga-VGA/VGA_RGB_Switch/VGA_RGB_Switch.srcs/sources_1/new/VGA_RGB_Switch.sv
+close_sim
