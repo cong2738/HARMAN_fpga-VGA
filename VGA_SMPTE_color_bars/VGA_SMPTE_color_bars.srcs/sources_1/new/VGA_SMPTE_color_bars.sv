@@ -9,7 +9,7 @@ module VGA_SMPTE_color_bars (
     output logic [3:0] blue
 );
     localparam COLOR0_W = 92, COLOR1_W = COLOR0_W, H_COLOR2_W = 110;
-    localparam COLOR0_H = 360, COLOR1_H = 30, COLOR2_H = 90;
+    localparam COLOR0_H = 300, COLOR1_H = 45, COLOR2_H = 135;
 
     logic [1:0] vertical_switch = {
         y_pixel < COLOR0_H + COLOR1_H, y_pixel < COLOR0_H
