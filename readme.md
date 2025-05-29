@@ -40,3 +40,9 @@ _  _  _
 ![VGA_industry_standard_timing](20250528_wavedrom.png)<br/>
 - circuit<br/>
 ![alt text](image-7.png)<br/>
+
+### 2025-05-29 VGA_ROM
+- rom size: QVGA(320*240)
+    - VGA is too big for basys3 board 컸다.
+- circuit block design<br/>
+![VGA_industry_standard_timing](20250529_VGA_memory.drawio.png)<br/>
