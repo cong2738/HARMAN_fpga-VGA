@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu May 29 09:33:11 2025
+| Date             : Thu May 29 09:46:05 2025
 | Host             : korchamHoyoun24 running 64-bit major release  (build 9200)
 | Command          : report_power -file VGA_Controler_power_routed.rpt -pb VGA_Controler_power_summary_routed.pb -rpx VGA_Controler_power_routed.rpx
 | Design           : VGA_Controler
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      206 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      115 |     20800 |            0.55 |
+| Slice Logic    |    <0.001 |      207 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      116 |     20800 |            0.56 |
 |   CARRY4       |    <0.001 |       17 |      8150 |            0.21 |
 |   Register     |    <0.001 |       23 |     41600 |            0.06 |
 |   Others       |     0.000 |        4 |       --- |             --- |
@@ -137,10 +137,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------+-----------+
-| Name          | Power (W) |
-+---------------+-----------+
-| VGA_Controler |     0.007 |
-+---------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| VGA_Controler   |     0.007 |
+|   u_VGA_Decoder |     0.001 |
++-----------------+-----------+
 
 

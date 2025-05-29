@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu May 29 09:32:59 2025
+| Date         : Thu May 29 09:45:43 2025
 | Host         : korchamHoyoun24 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file VGA_Controler_control_sets_placed.rpt
 | Design       : VGA_Controler
@@ -62,7 +62,7 @@ Table of Contents
 | No           | No                    | Yes                    |              13 |            5 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              10 |            3 |
+| Yes          | No                    | Yes                    |              10 |            4 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -75,7 +75,7 @@ Table of Contents
 +------------------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG                           |                                         | reset_IBUF       |                1 |              3 |         3.00 |
 |  u_VGA_Decoder/u_pixel_clk_generator/CLK |                                         | reset_IBUF       |                4 |             10 |         2.50 |
-|  u_VGA_Decoder/u_pixel_clk_generator/CLK | u_VGA_Decoder/u_pixel_counter/v_count_1 | reset_IBUF       |                3 |             10 |         3.33 |
+|  u_VGA_Decoder/u_pixel_clk_generator/CLK | u_VGA_Decoder/u_pixel_counter/v_count_1 | reset_IBUF       |                4 |             10 |         2.50 |
 +------------------------------------------+-----------------------------------------+------------------+------------------+----------------+--------------+
 
 
