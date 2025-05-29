@@ -33,7 +33,10 @@ basys3 보드의 색상 채현률은 RGB 4비트씩 4096가지 색상을 표현 
 ![VGA_industry_standard_timing](image-5.png)<br/>
 _  _  _
 
-### 2025-05-28 VGA switch
+### 2025-05-28 VGA_RGB_Switch
+- circuit block design<br/>
 ![VGA_industry_standard_timing](20250528.drawio.png)<br/>
+- pixelCounter timing <br/>
 ![VGA_industry_standard_timing](20250528_wavedrom.png)<br/>
+- circuit<br/>
 ![alt text](image-7.png)<br/>
