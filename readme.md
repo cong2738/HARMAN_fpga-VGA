@@ -24,7 +24,8 @@
 
 ### 덤
 basys3 보드의 색상 채현률은 RGB 4비트씩 4096가지 색상을 표현 가능하다. 명암(색심도) 기능은 없다.<br/>
-![basys3 vga](image-6.png)
+- basys3의 DA(Digital to Analog cricuit)<br/>
+![basys3 vga](image-6.png)<br/>
 
 ## develop
 ![alt text](image-2.png)<br/>
@@ -32,7 +33,7 @@ basys3 보드의 색상 채현률은 RGB 4비트씩 4096가지 색상을 표현 
 ![VGA_industry_standard_timing](image-5.png)<br/>
 _  _  _
 
-### 2025-05-28
+### 2025-05-28 VGA_SMPTE_color_bars
 ![VGA_industry_standard_timing](20250528.drawio.png)<br/>
 ![VGA_industry_standard_timing](20250528_wavedrom.png)<br/>
 ![alt text](image-7.png)<br/>
