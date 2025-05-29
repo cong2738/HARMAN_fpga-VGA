@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 29 11:46:44 2025
+# Process ID: 43200
+# Current directory: C:/harman/fpga-VGA/VGA_ROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36964 C:\harman\fpga-VGA\VGA_ROM\VGA_ROM.xpr
+# Log file: C:/harman/fpga-VGA/VGA_ROM/vivado.log
+# Journal file: C:/harman/fpga-VGA/VGA_ROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/harman/fpga-VGA/VGA_ROM/VGA_ROM.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+refresh_design
