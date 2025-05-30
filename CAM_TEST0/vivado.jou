@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 30 18:47:56 2025
+# Process ID: 1960
+# Current directory: C:/harman/fpga-VGA/CAM_TEST0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18092 C:\harman\fpga-VGA\CAM_TEST0\CAM_TEST0.xpr
+# Log file: C:/harman/fpga-VGA/CAM_TEST0/vivado.log
+# Journal file: C:/harman/fpga-VGA/CAM_TEST0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.xpr
