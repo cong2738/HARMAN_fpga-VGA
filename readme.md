@@ -50,14 +50,18 @@ _  _  _
 - circuit block design<br/>
 ![VGA_industry_standard_timing](20250529_VGA_memory.drawio.png)<br/>
 - - - 
+
 ### CAM(OV7670)
 ![OV7670 block diagram](20250530_OV7670.drawio.png)<br/>
 ![OV7670 sccb timing diagram](image-8.png)<br/>
 ![OV7670 Horizontal daigram](image-9.png)<br/>
 ![OV7670 Vertical daigram](image-10.png)<br/>
 ![OV7670 RGB 565 Output Timing Daigram](image-11.png)<br/>
+
 #### 2025-05-29 VGA_CAM
 - block diagram<br/>
 ![OV7670 block diagram](20250530_OV7670.drawio.png)<br/>
-![OV7670_buffer block diagram](OV7670_buffer_FSM_Diagram.png)<br/>
+![OV7670_buffer block diagram](OV7670_buffer_FSM_Diagram.drawio.png)<br/>
+- circuit
+![alt text](image-12.png)<br/>
 
