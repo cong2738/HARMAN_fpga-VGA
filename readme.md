@@ -27,13 +27,16 @@ basys3 보드의 색상 채현률은 RGB 4비트씩 4096가지 색상을 표현 
 - basys3의 DA(Digital to Analog cricuit)<br/>
 ![basys3 vga](image-6.png)<br/>
 
+
+
 ## develop
+### vga<br/>
 ![alt text](image-2.png)<br/>
 ![alt text](image-4.png)<br/>
 ![VGA_industry_standard_timing](image-5.png)<br/>
 _  _  _
 
-### 2025-05-28 VGA_RGB_Switch
+#### 2025-05-28 VGA_RGB_Switch
 - circuit block design<br/>
 ![VGA_industry_standard_timing](20250528.drawio.png)<br/>
 - pixelCounter timing <br/>
@@ -41,8 +44,20 @@ _  _  _
 - circuit<br/>
 ![alt text](image-7.png)<br/>
 
-### 2025-05-29 VGA_ROM
+#### 2025-05-29 VGA_ROM
 - rom size: QVGA(320*240)
     - VGA is too big for basys3 board 컸다.
 - circuit block design<br/>
 ![VGA_industry_standard_timing](20250529_VGA_memory.drawio.png)<br/>
+- - - 
+### CAM(OV7670)
+![OV7670 block diagram](20250530_OV7670.drawio.png)<br/>
+![OV7670 sccb timing diagram](image-8.png)<br/>
+![OV7670 Horizontal daigram](image-9.png)<br/>
+![OV7670 Vertical daigram](image-10.png)<br/>
+![OV7670 RGB 565 Output Timing Daigram](image-11.png)<br/>
+#### 2025-05-29 VGA_CAM
+- block diagram<br/>
+![OV7670 block diagram](20250530_OV7670.drawio.png)<br/>
+![OV7670_buffer block diagram](OV7670_buffer_FSM_Diagram.png)<br/>
+
