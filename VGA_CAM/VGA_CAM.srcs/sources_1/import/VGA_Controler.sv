@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module VGA_Controler (
-    input  bit         clk,
-    input  bit         reset,
+    input bit clk,
+    input bit reset,
     // ov7670
     input  logic       ov7670_pclk,
     input  logic       ov7670_href,
@@ -18,7 +18,7 @@ module VGA_Controler (
 );
     logic vga_pclk;
     logic [9:0] x_pixel, y_pixel;
-    logic we;
+    logic we, oe;
     logic [16:0] wAddr, rAddr;
     logic [15:0] wData, rData;
 
@@ -56,19 +56,22 @@ module VGA_Controler (
         .we   (we),
         .wAddr(wAddr),
         .wData(wData),
+        .rclk (clk),
+        .oe   (oe),
         .rAddr(rAddr),
         .rData(rData)
     );
 
     QVGA_memoryControler u_QVGA_memoryControler (
-        .rAddr   (rAddr),
-        .rData   (rData),
-        .DE      (DE),
-        .x_pixel (x_pixel),
-        .y_pixel (y_pixel),
-        .vgaRed  (vgaRed),
-        .vgaBlue (vgaBlue),
-        .vgaGreen(vgaGreen)
+        .display_en(oe),
+        .rAddr     (rAddr),
+        .rData     (rData),
+        .DE        (DE),
+        .x_pixel   (x_pixel),
+        .y_pixel   (y_pixel),
+        .vgaRed    (vgaRed),
+        .vgaBlue   (vgaBlue),
+        .vgaGreen  (vgaGreen)
     );
 endmodule
 

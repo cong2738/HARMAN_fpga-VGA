@@ -7,15 +7,16 @@ module frame_buffer (
     input  logic [16:0] wAddr,
     input  logic [15:0] wData,
     // read side
+    input  logic        rclk,
+    input  logic        oe,
     input  logic [16:0] rAddr,
     output logic [15:0] rData
 );
     logic [15:0] VRAM[0:(320*240)-1];
     always_ff @(posedge wclk) begin : write
-        if (we) begin
-            VRAM[wAddr] = wData;
-        end
+        if (we) VRAM[wAddr] = wData;
     end
-
-    assign rData = VRAM[rAddr]; // read
+    always_ff @(posedge rclk) begin : read
+        if (oe) rData = VRAM[rAddr];
+    end
 endmodule
