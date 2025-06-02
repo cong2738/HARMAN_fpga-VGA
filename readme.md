@@ -61,7 +61,9 @@ _  _  _
 #### 2025-05-29 VGA_CAM
 - block diagram<br/>
 ![OV7670 block diagram](20250530_OV7670.drawio.png)<br/>
-![OV7670_buffer block diagram](OV7670_buffer_FSM_Diagram.drawio.png)<br/>
 - circuit
 ![alt text](image-12.png)<br/>
+- - -
 
+### ISP
+![ISP계획](ISP계획.drawio.png)<br/>
