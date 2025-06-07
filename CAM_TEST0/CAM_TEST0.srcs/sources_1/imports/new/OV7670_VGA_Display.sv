@@ -4,12 +4,15 @@ module OV7670_VGA_Display (
     // global signals
     input  logic       clk,
     input  logic       reset,
+    input  logic       initial_start,
     // ov7670 signals
     output logic       ov7670_xclk,    // == mclk
     input  logic       ov7670_pclk,
     input  logic       ov7670_href,
     input  logic       ov7670_v_sync,
     input  logic [7:0] ov7670_data,
+    output logic       ov7670_SCL,
+    output logic       ov7670_SDA,
     // export signals
     input  logic [3:0] sw_mode,
     output logic       Hsync,
@@ -38,6 +41,13 @@ module OV7670_VGA_Display (
         .pclk (ov7670_xclk)
     );
 
+    SCCB_core u_SCCB_core (
+        .clk          (clk),
+        .reset        (reset),
+        .initial_start(initial_start),
+        .sioc         (ov7670_SCL),
+        .siod         (ov7670_SDA)
+    );
 
     VGA_Controller U_VGAController (
         .clk    (clk),

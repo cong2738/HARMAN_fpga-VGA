@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri May 30 19:16:30 2025
-# Process ID: 24432
+# Start of session at: Wed Jun  4 15:15:44 2025
+# Process ID: 28076
 # Current directory: C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/synth_1
 # Command line: vivado.exe -log OV7670_VGA_Display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_VGA_Display.tcl
 # Log file: C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/synth_1/OV7670_VGA_Display.vds
@@ -17,18 +17,37 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21976
+INFO: [Synth 8-7075] Helper process launched with PID 37400
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1105.957 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1104.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'OV7670_VGA_Display' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_VGA_Display.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'pixel_clk_gen' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'pixel_clk_gen' (1#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_core' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'tick_gen' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:511]
+INFO: [Synth 8-6155] done synthesizing module 'tick_gen' (2#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:511]
+INFO: [Synth 8-6157] synthesizing module 'btn_detector' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:539]
+INFO: [Synth 8-6155] done synthesizing module 'btn_detector' (3#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:539]
+INFO: [Synth 8-6157] synthesizing module 'SCCB_Controller' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'OV7670_config_rom' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:369]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_config_rom' (4#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:369]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_Controller' (5#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:52]
+INFO: [Synth 8-6157] synthesizing module 'SCCB' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:131]
+	Parameter OV7670_ADDR_WRITE bound to: 8'b01000010 
+	Parameter OV7670_ADDR_READ bound to: 8'b01000011 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:218]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:266]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:297]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:216]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:204]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB' (6#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:131]
+INFO: [Synth 8-6155] done synthesizing module 'SCCB_core' (7#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'VGA_Controller' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'pixel_counter' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:50]
 	Parameter H_MAX bound to: 800 - type: integer 
 	Parameter V_MAX bound to: 525 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (2#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_counter' (8#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:50]
 INFO: [Synth 8-6157] synthesizing module 'VGA_decoder' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:85]
 	Parameter H_Visible_area bound to: 640 - type: integer 
 	Parameter H_Front_porch bound to: 16 - type: integer 
@@ -40,31 +59,31 @@ INFO: [Synth 8-6157] synthesizing module 'VGA_decoder' [C:/harman/fpga-VGA/CAM_T
 	Parameter V_Sync_pulse bound to: 2 - type: integer 
 	Parameter V_Back_porch bound to: 33 - type: integer 
 	Parameter V_Whole_frame bound to: 525 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'VGA_decoder' (3#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:85]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (4#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_decoder' (9#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_Controller' (10#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'OV7670_MemController' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_MemController.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'OV7670_MemController' (5#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_MemController.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_MemController' (11#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_MemController.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/frame_buffer.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (6#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/frame_buffer.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (12#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/frame_buffer.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'QVGA_MemController' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/QVGA_MemController.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (7#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/QVGA_MemController.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'QVGA_MemController' (13#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/QVGA_MemController.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'glayScale_filter' [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/glayScale_filter.sv:3]
-INFO: [Synth 8-6155] done synthesizing module 'glayScale_filter' (8#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/glayScale_filter.sv:3]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_VGA_Display.sv:106]
-INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (9#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_VGA_Display.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'glayScale_filter' (14#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/glayScale_filter.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_VGA_Display.sv:116]
+INFO: [Synth 8-6155] done synthesizing module 'OV7670_VGA_Display' (15#1) [C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_VGA_Display.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1105.957 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1104.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1105.957 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1104.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1105.957 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1104.875 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1105.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1104.875 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -75,55 +94,98 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/OV7670_VGA_Display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1177.156 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1180.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1177.156 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1180.824 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.156 ; gain = 71.199
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.824 ; gain = 75.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.156 ; gain = 71.199
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.824 ; gain = 75.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.156 ; gain = 71.199
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1180.824 ; gain = 75.949
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'SCCB_Controller'
+INFO: [Synth 8-802] inferred FSM for state register 'sccb_state_reg' in module 'SCCB'
+INFO: [Synth 8-802] inferred FSM for state register 'phase_state_reg' in module 'SCCB'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   START |                             0010 |                               01
+               WAIT_DONE |                             0100 |                               10
+                    WAIT |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'SCCB_Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           PHASE_IP_ADDR |                              001 |                               00
+          PHASE_REG_ADDR |                              010 |                               01
+              PHASE_DATA |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'phase_state_reg' using encoding 'one-hot' in module 'SCCB'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               SCCB_IDLE |                                0 |                               00
+              SCCB_WRITE |                                1 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sccb_state_reg' using encoding 'sequential' in module 'SCCB'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1177.156 ; gain = 71.199
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1180.824 ; gain = 75.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input   17 Bit       Adders := 1     
 	   2 Input   10 Bit       Adders := 3     
-	   2 Input    8 Bit       Adders := 1     
-	   2 Input    2 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 3     
 +---Registers : 
-	               16 Bit    Registers := 2     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
 	               10 Bit    Registers := 3     
-	                8 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
 +---RAMs : 
 	            1200K Bit	(76800 X 16 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
 +---Muxes : 
-	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
 	   3 Input   16 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
 	   5 Input    4 Bit        Muxes := 3     
-	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 2     
-	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 62    
+	   4 Input    1 Bit        Muxes := 21    
+	   9 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 13    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -143,11 +205,19 @@ DSP Report: Generating DSP U_QVGA_MemController/rAddr0, operation Mode is: C+A*(
 DSP Report: operator U_QVGA_MemController/rAddr0 is absorbed into DSP U_QVGA_MemController/rAddr0.
 DSP Report: operator U_QVGA_MemController/rAddr1 is absorbed into DSP U_QVGA_MemController/rAddr0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1177.156 ; gain = 71.199
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1180.824 ; gain = 75.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++-------------------+------------------------------------------------------------+---------------+----------------+
+|Module Name        | RTL Object                                                 | Depth x Width | Implemented As | 
++-------------------+------------------------------------------------------------+---------------+----------------+
+|OV7670_VGA_Display | u_SCCB_core/U_SCCB_Controller/U_OV7670_config_rom/dout_reg | 256x16        | Block RAM      | 
++-------------------+------------------------------------------------------------+---------------+----------------+
+
 
 Block RAM: Preliminary Mapping	Report (see note below)
 +-------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
@@ -173,13 +243,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1205.223 ; gain = 99.266
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1210.574 ; gain = 105.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1215.953 ; gain = 109.996
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1231.348 ; gain = 126.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -222,8 +292,9 @@ INFO: [Synth 8-7052] The timing for the instance U_Frame_Buffer/mem_reg_1_12__0 
 INFO: [Synth 8-7052] The timing for the instance U_Frame_Buffer/mem_reg_1_13__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance U_Frame_Buffer/mem_reg_1_14__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance U_Frame_Buffer/mem_reg_1_15__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_SCCB_core/U_SCCB_Controller/U_OV7670_config_rom/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1226.004 ; gain = 120.047
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1232.004 ; gain = 127.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -241,37 +312,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.020 ; gain = 129.062
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.844 ; gain = 137.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.020 ; gain = 129.062
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.844 ; gain = 137.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.020 ; gain = 129.062
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.844 ; gain = 137.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.020 ; gain = 129.062
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.844 ; gain = 137.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.062 ; gain = 129.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.883 ; gain = 138.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.062 ; gain = 129.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.883 ; gain = 138.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -287,41 +358,45 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |BUFG     |     2|
-|2     |CARRY4   |    20|
+|1     |BUFG     |     3|
+|2     |CARRY4   |    27|
 |3     |DSP48E1  |     1|
-|4     |LUT1     |     4|
-|5     |LUT2     |    86|
-|6     |LUT3     |    20|
-|7     |LUT4     |    27|
-|8     |LUT5     |    43|
-|9     |LUT6     |    56|
-|10    |RAMB36E1 |    36|
-|13    |FDCE     |    64|
-|14    |FDRE     |     2|
-|15    |IBUF     |    17|
-|16    |OBUF     |    15|
+|4     |LUT1     |     8|
+|5     |LUT2     |   120|
+|6     |LUT3     |    37|
+|7     |LUT4     |    47|
+|8     |LUT5     |    58|
+|9     |LUT6     |   108|
+|10    |MUXF7    |     1|
+|11    |RAMB18E1 |     1|
+|12    |RAMB36E1 |    36|
+|15    |FDCE     |   171|
+|16    |FDPE     |     7|
+|17    |FDRE     |     2|
+|18    |IBUF     |    18|
+|19    |OBUF     |    16|
+|20    |OBUFT    |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.062 ; gain = 129.105
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.883 ; gain = 138.008
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1235.062 ; gain = 57.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1235.062 ; gain = 129.105
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 1242.883 ; gain = 62.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1242.883 ; gain = 138.008
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1248.121 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1254.902 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1248.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1254.902 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-58 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+82 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1248.121 ; gain = 142.164
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1254.902 ; gain = 150.027
 INFO: [Common 17-1381] The checkpoint 'C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/synth_1/OV7670_VGA_Display.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file OV7670_VGA_Display_utilization_synth.rpt -pb OV7670_VGA_Display_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May 30 19:16:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  4 15:16:20 2025...

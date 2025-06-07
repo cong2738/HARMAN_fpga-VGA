@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri May 30 19:17:40 2025
+| Date         : Wed Jun  4 15:17:18 2025
 | Host         : korchamHoyoun24 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file OV7670_VGA_Display_methodology_drc_routed.rpt -pb OV7670_VGA_Display_methodology_drc_routed.pb -rpx OV7670_VGA_Display_methodology_drc_routed.rpx
 | Design       : OV7670_VGA_Display
@@ -23,13 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 128
+             Violations found: 200
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 94         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 165        |
 | DPIR-1    | Warning          | Asynchronous driver check     | 20         |
-| TIMING-18 | Warning          | Missing input or output delay | 14         |
+| TIMING-18 | Warning          | Missing input or output delay | 15         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -504,6 +504,361 @@ Non-clocked sequential cell
 The clock pin U_VGAController/U_Pix_counter/v_counter_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-17#95 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/FSM_onehot_phase_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#96 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/FSM_onehot_phase_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#97 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/FSM_onehot_phase_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#98 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/FSM_sequential_sccb_state_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#99 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#100 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#101 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/data_index_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#102 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/data_index_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#103 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/data_index_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#104 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/protocol_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#105 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/protocol_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#106 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/protocol_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#107 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/sccb_done_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#108 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/sioc_reg_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#109 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/siod_mode_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#110 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/siod_out_data_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#111 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/stop_flag_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#112 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#113 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#114 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#115 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#116 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#117 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#118 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#119 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_reg_addr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#120 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#121 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#122 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#123 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#124 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#125 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#126 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#127 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB/temp_write_data_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#128 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/FSM_onehot_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#129 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/FSM_onehot_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#130 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/FSM_onehot_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/FSM_onehot_state_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/U_OV7670_config_rom/dout_reg/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/U_OV7670_config_rom/u_SCCB_core/U_SCCB_Controller/U_OV7670_config_rom/dout_reg_cooolgate_en_gate_74_cooolDelFlop/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#139 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#140 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/data_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/reg_addr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/rom_addr_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/start_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Critical Warning
+Non-clocked sequential cell  
+The clock pin u_SCCB_core/U_SCCB_Controller/wait_count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
 DPIR-1#1 Warning
 Asynchronous driver check  
 DSP U_QVGA_MemController/rAddr0 input pin U_QVGA_MemController/rAddr0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
@@ -606,70 +961,75 @@ Related violations: <none>
 
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on reset relative to clock(s) sys_clk_pin
+An input delay is missing on initial_start relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An output delay is missing on ov7670_xclk relative to clock(s) sys_clk_pin
+An input delay is missing on reset relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on vgaBlue[0] relative to clock(s) sys_clk_pin
+An output delay is missing on ov7670_xclk relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on vgaBlue[1] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on vgaBlue[2] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on vgaBlue[3] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on vgaGreen[0] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaBlue[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on vgaGreen[1] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaGreen[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on vgaGreen[2] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaGreen[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on vgaGreen[3] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaGreen[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[0] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaGreen[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[1] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaRed[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on vgaRed[2] relative to clock(s) sys_clk_pin
+An output delay is missing on vgaRed[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on vgaRed[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#15 Warning
 Missing input or output delay  
 An output delay is missing on vgaRed[3] relative to clock(s) sys_clk_pin
 Related violations: <none>

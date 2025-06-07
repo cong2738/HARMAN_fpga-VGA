@@ -71,8 +71,9 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
-set_param synth.incrementalSynthesisCache C:/harman/fpga-VGA/CAM_TEST0/.Xil/Vivado-1960-korchamHoyoun24/incrSyn
+set_param synth.incrementalSynthesisCache {C:/harman/_HARMAN Team Project/HarmanSA_June_TeamPJ/CAM/.Xil/Vivado-39140-korchamHoyoun24/incrSyn}
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -94,6 +95,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/OV7670_MemController.sv
   C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/QVGA_MemController.sv
+  C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/SCCB.sv
   C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/VGA_Controller.sv
   C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/imports/new/frame_buffer.sv
   C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.srcs/sources_1/new/glayScale_filter.sv

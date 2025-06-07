@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri May 30 19:16:30 2025
-# Process ID: 24432
+# Start of session at: Wed Jun  4 15:15:44 2025
+# Process ID: 28076
 # Current directory: C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/synth_1
 # Command line: vivado.exe -log OV7670_VGA_Display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_VGA_Display.tcl
 # Log file: C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/synth_1/OV7670_VGA_Display.vds

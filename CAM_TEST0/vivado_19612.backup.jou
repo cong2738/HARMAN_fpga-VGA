@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May 30 19:22:56 2025
+# Process ID: 19612
+# Current directory: C:/harman/fpga-VGA/CAM_TEST0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17700 C:\harman\fpga-VGA\CAM_TEST0\CAM_TEST0.xpr
+# Log file: C:/harman/fpga-VGA/CAM_TEST0/vivado.log
+# Journal file: C:/harman/fpga-VGA/CAM_TEST0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/harman/fpga-VGA/CAM_TEST0/CAM_TEST0.runs/impl_1/OV7670_VGA_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
